@@ -14,8 +14,8 @@ class Solution {
         Collections.reverse(sb);
         StringBuilder ab=new StringBuilder();
         while (!sb.isEmpty()) {
-    ab.append(sb.pop());
-}
+            ab.append(sb.pop());
+        }
         return ab.toString();
     }
 }
