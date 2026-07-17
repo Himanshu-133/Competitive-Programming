@@ -36,8 +36,8 @@ Output: "255[.]100[.]50[.]0"
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 22.88%)  
-**Memory:** 43 MB (beats 26.59%)  
-**Submitted:** 2026-07-17T18:22:24.651Z  
+**Memory:** 43 MB (beats 12.51%)  
+**Submitted:** 2026-07-17T18:22:43.954Z  
 
 ```java
 class Solution {
@@ -56,8 +56,8 @@ class Solution {
         Collections.reverse(sb);
         StringBuilder ab=new StringBuilder();
         while (!sb.isEmpty()) {
-    ab.append(sb.pop());
-}
+            ab.append(sb.pop());
+        }
         return ab.toString();
     }
 }
