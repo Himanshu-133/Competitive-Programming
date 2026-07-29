@@ -6,17 +6,24 @@
 
 | Total Problems | Topics |
 |---|---|
-| 2 | 3 |
+| 3 | 4 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
+- [bitmasks](#bitmasks) (1)
 - [brute force](#brute-force) (1)
-- [math](#math) (1)
+- [math](#math) (2)
 - [strings](#strings) (1)
 
 ---
+
+### bitmasks
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 1594B | [Special Numbers](https://codeforces.com/contest/1594/problem/B) | 1100 | [Java 21](https://github.com/Himanshu-133/Competitive-Programming/blob/HEAD/1594/B%20-%20Special%20Numbers/solution.java) |
 
 ### brute force
 
@@ -29,6 +36,7 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 1594A | [Consecutive Sum Riddle](https://codeforces.com/contest/1594/problem/A) | 800 | [Java 21](https://github.com/Himanshu-133/Competitive-Programming/blob/HEAD/1594/A%20-%20Consecutive%20Sum%20Riddle/solution.java) |
+| 1594B | [Special Numbers](https://codeforces.com/contest/1594/problem/B) | 1100 | [Java 21](https://github.com/Himanshu-133/Competitive-Programming/blob/HEAD/1594/B%20-%20Special%20Numbers/solution.java) |
 
 ### strings
 
