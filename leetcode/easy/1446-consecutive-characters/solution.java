@@ -1,6 +1,7 @@
 class Solution {
     public int maxPower(String s) {
         if(s==null || s.length()==0)return 0;
+        if(s.length()==1)return 1;
         int count=1;
         int c=Integer.MIN_VALUE;
         char[] res=s.toCharArray();
