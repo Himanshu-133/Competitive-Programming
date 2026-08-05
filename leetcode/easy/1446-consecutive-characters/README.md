@@ -38,9 +38,9 @@ Explanation: The substring "eeeee" is of length 5 with the character 'e' only.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.7 MB  
-**Submitted:** 2026-08-05T18:54:35.469Z  
+**Runtime:** 1 ms (beats 100.00%)  
+**Memory:** 43.3 MB (beats 79.64%)  
+**Submitted:** 2026-08-05T18:54:43.669Z  
 
 ```java
 class Solution {
