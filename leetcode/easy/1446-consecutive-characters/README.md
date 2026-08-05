@@ -39,13 +39,14 @@ Explanation: The substring "eeeee" is of length 5 with the character 'e' only.
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.1 MB  
-**Submitted:** 2026-08-05T18:53:20.294Z  
+**Memory:** 42.7 MB  
+**Submitted:** 2026-08-05T18:54:35.469Z  
 
 ```java
 class Solution {
     public int maxPower(String s) {
         if(s==null || s.length()==0)return 0;
+        if(s.length()==1)return 1;
         int count=1;
         int c=Integer.MIN_VALUE;
         char[] res=s.toCharArray();
