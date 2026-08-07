@@ -59,9 +59,9 @@ Explanation: Every second, we fill up a cold cup.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-08-07T21:58:08.164Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 43 MB (beats 42.39%)  
+**Submitted:** 2026-08-07T21:58:12.395Z  
 
 ```java
 class Solution {
