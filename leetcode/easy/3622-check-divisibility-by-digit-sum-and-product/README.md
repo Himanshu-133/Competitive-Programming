@@ -43,8 +43,8 @@ Since 23 is not divisible by the sum (2 + 3 = 5) plus product (2 * 3 = 6) of its
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42.1 MB  
-**Submitted:** 2026-09-05T19:56:07.650Z  
+**Memory:** 42.3 MB  
+**Submitted:** 2026-09-05T19:56:12.867Z  
 
 ```java
 class Solution {
@@ -57,7 +57,7 @@ class Solution {
             prod=prod*digit;
             org=org/10;
         }
-        if((sum+prod)==org){
+        if((sum+prod)==n){
             return true;
         }
         return false;
