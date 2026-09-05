@@ -8,7 +8,7 @@ class Solution {
             prod=prod*digit;
             org=org/10;
         }
-        if((sum+prod)==n){
+        if(n%(sum+prod)==0){
             return true;
         }
         return false;
