@@ -52,39 +52,33 @@ You are given an array of digits called `digits`. Your task is to determine the 
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 100.00%)  
-**Memory:** 43.9 MB (beats 91.07%)  
-**Submitted:** 2026-09-11T10:06:11.352Z  
+**Runtime:** 4 ms (beats 86.93%)  
+**Memory:** 46.6 MB (beats 26.13%)  
+**Submitted:** 2026-09-11T10:25:46.324Z  
 
 ```java
 class Solution {
-    public int totalNumbers(int[] d) {
-        int[] f = new int[10];
-        for (int x : d) f[x]++;
-
-        int ans = 0;
-
-        for (int last = 0; last <= 8; last += 2) {
-            if (f[last] == 0) continue;
-
-            f[last]--;
-
-            for (int first = 1; first <= 9; first++) {
-                if (f[first] == 0) continue;
-
-                f[first]--;
-
-                for (int mid = 0; mid <= 9; mid++)
-                    if (f[mid] > 0)
-                        ans += 1;
-
-                f[first]++;
+    public int totalNumbers(int[] digits) {
+        Set<Integer> sb=new HashSet<>();
+        int n=digits.length;
+        for(int i=0;i<n;i++){
+            if(digits[i]%2!=0){
+                continue;
             }
-
-            f[last]++;
+            for(int j=0;j<n;j++){
+                if(j==i){
+                    continue;
+                }
+                for(int k=0;k<n;k++){
+                    if(k==i || k==j || digits[k]==0){
+                        continue;
+                    }
+                    int num=digits[k]*100+digits[j]*10+digits[i];
+                    sb.add(num);
+                }
+            }
         }
-
-        return ans;
+        return sb.size();
     }
 }
 ```
