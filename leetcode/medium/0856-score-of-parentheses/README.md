@@ -49,24 +49,28 @@ Output: 2
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.2 MB  
-**Submitted:** 2026-10-05T15:44:25.262Z  
+**Runtime:** 1 ms (beats 61.96%)  
+**Memory:** 43.1 MB (beats 12.37%)  
+**Submitted:** 2026-10-05T15:52:54.971Z  
 
 ```java
 class Solution {
     public int scoreOfParentheses(String s) {
-        int count=0;
-        int high=0,low=0;
+        Stack<Integer> sb=new Stack<>();
+        sb.push(0);
         for(char ch:s.toCharArray()){
             if(ch=='('){
-                high++;
+                sb.push(0);
             }else{
-                low++;
+                int inner=sb.pop();
+                if(inner==0){
+                    sb.push(sb.pop()+1);
+                }else{
+                    sb.push(sb.pop()+2*inner);
+                }
             }
         }
-        count=Math.max(high,low);
-        return count;
+        return sb.pop();
     }
 }
 ```
