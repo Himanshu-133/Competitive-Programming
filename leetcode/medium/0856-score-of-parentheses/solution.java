@@ -1,15 +1,19 @@
 class Solution {
     public int scoreOfParentheses(String s) {
-        int count=0;
-        int high=0,low=0;
+        Stack<Integer> sb=new Stack<>();
+        sb.push(0);
         for(char ch:s.toCharArray()){
             if(ch=='('){
-                high++;
+                sb.push(0);
             }else{
-                low++;
+                int inner=sb.pop();
+                if(inner==0){
+                    sb.push(sb.pop()+1);
+                }else{
+                    sb.push(sb.pop()+2*inner);
+                }
             }
         }
-        count=Math.max(high,low);
-        return count;
+        return sb.pop();
     }
 }
